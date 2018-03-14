@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lc:LibraryCompiler xmlns:lc="urn:abb-robotics-robotstudio-librarycompiler"
+										xmlns="urn:abb-robotics-robotstudio-graphiccomponent"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:abb-robotics-robotstudio-librarycompiler file:///C:\Program%20Files%20(x86)\ABB%20Industrial%20IT\Robotics%20IT\SDK\RobotStudio%20SDK%206.07\LibraryCompilerSchema.xsd
+                                        urn:abb-robotics-robotstudio-graphiccomponent file:///C:\Program%20Files%20(x86)\ABB%20Industrial%20IT\Robotics%20IT\SDK\RobotStudio%20SDK%206.07\GraphicComponentSchema.xsd">
+	<lc:Library fileName="RSDrawGraphics.rslib">
+		<lc:DocumentProperties>
+			<lc:Author>FRAIPONT_Denis</lc:Author>
+			<lc:Image source="RSDrawGraphics.png"/>
+		</lc:DocumentProperties>
+		<SmartComponent name="RSDrawGraphics" icon="RSDrawGraphics.png"
+										codeBehind="RSDrawGraphics.CodeBehind,RSDrawGraphics.dll"
+										canBeSimulated="true">
+			<Properties>
+        <DynamicProperty name="Status" valueType="System.String" value="" readOnly="true" uiVisible="false">
+					<Attribute key="AddToDisplayName" value="true"/>
+				</DynamicProperty>
+        <DynamicProperty name="Controller" valueType="System.String">
+          <Attribute key="AutoApply" value="true"/>
+          <Attribute key="AllowedValues" value="Update" />
+        </DynamicProperty>
+        <DynamicProperty name="Task" valueType="System.String">
+          <Attribute key="AutoApply" value="true"/>
+          <Attribute key="AllowedValues" value="" />
+        </DynamicProperty>
+        <DynamicProperty name="Module" valueType="System.String">
+          <Attribute key="AutoApply" value="true"/>
+          <Attribute key="AllowedValues" value="" />
+        </DynamicProperty>
+        <DynamicProperty name="Data" valueType="System.String">
+          <Attribute key="AutoApply" value="true"/>
+          <Attribute key="AllowedValues" value="" />
+        </DynamicProperty>
+        <DynamicProperty name="ShapeType" valueType="System.String" value="Capsule">
+          <Attribute key="AllowedValues" value="Capsule;Box"/>
+        </DynamicProperty>
+        <DynamicProperty name="ParentAxis" valueType="System.Int32" value="1">
+          <Attribute key="MinValue" value="0"/>
+          <Attribute key="MaxValue" value="6"/>
+        </DynamicProperty>
+        <DynamicProperty name="CurrentAxis" valueType="ABB.Robotics.Math.Matrix4">
+        </DynamicProperty>
+        <DynamicProperty name="Shift" valueType="ABB.Robotics.Math.Matrix4">
+        </DynamicProperty>
+        <DynamicProperty name="Radius" valueType="System.Double" value="0.1" uiVisible="true">
+          <Attribute key="Quantity" value="Length"/>
+          <Attribute key="MinValue" value="0"/>
+        </DynamicProperty>
+        <DynamicProperty name="Length" valueType="System.Double" value="0.1">
+          <Attribute key="Quantity" value="Length"/>
+          <Attribute key="MinValue" value="0"/>
+        </DynamicProperty>
+        <DynamicProperty name="Height" valueType="System.Double" value="0.1" uiVisible="false">
+          <Attribute key="Quantity" value="Length"/>
+          <Attribute key="MinValue" value="0"/>
+        </DynamicProperty>
+        <DynamicProperty name="Width" valueType="System.Double" value="0.1" uiVisible="false">
+          <Attribute key="Quantity" value="Length"/>
+          <Attribute key="MinValue" value="0"/>
+        </DynamicProperty>
+        <DynamicProperty name="Color" valueType="ABB.Robotics.Math.Vector3" value="[0,0,0]">
+          <Attribute key="CustomValidation" value="true"/>
+        </DynamicProperty>
+        <DynamicProperty name="Opacity" valueType="System.Int32" value="0">
+          <Attribute key="MinValue" value="0"/>
+          <Attribute key="MaxValue" value="255"/>
+        </DynamicProperty>
+        <DynamicProperty name="GeneratedPart" valueType="ABB.Robotics.RobotStudio.Stations.Part" readOnly="true" uiVisible="false"/>
+        <DynamicProperty name="ShowAtOrigin" valueType="System.Boolean" value="false"/>
+        <DynamicProperty name="MakeAxisFrame" valueType="System.Boolean" value="false"/>
+        <DynamicProperty name="IsSelectable" valueType="System.Boolean" value="true"/>
+      </Properties>
+			<Bindings>
+			</Bindings>
+			<Signals>
+        <IOSignal name="UpdateGraph" signalType="DigitalInput" value="1"/>
+        <IOSignal name="SyncToRAPID" signalType="DigitalInput" value="0"/>
+      </Signals>
+			<GraphicComponents>
+			</GraphicComponents>
+			<Assets>
+				<Asset source="RSDrawGraphics.dll"/>
+			</Assets>
+		</SmartComponent>
+	</lc:Library>
+</lc:LibraryCompiler>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LibraryResource xmlns="urn:abb-robotics-robotstudio-libraryresource"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="urn:abb-robotics-robotstudio-libraryresource file:///C:\Program%20Files%20(x86)\ABB%20Industrial%20IT\Robotics%20IT\SDK\RobotStudio%20SDK%206.06\LibraryResourceSchema.xsd">
+	<SmartComponent name="RSDrawGraphics" description="Draw Graphics from Rapid data.">
+		<DynamicProperty name="Status" description="The status of this component."/>
+    <DynamicProperty name="Controller" description="The Controller to get data."/>
+    <DynamicProperty name="Task" description="The Task to get data."/>
+    <DynamicProperty name="Module" description="The Module to get data."/>
+    <DynamicProperty name="Data" description="The ShapeData data."/>
+    <DynamicProperty name="ParentAxis" description="Axis where shape is."/>
+    <DynamicProperty name="CurrentAxis" description="Current position for Axis."/>
+    <DynamicProperty name="Shift" description="Shift position on Axis."/>
+    <DynamicProperty name="Radius" description="Radius."/>
+    <DynamicProperty name="Length" description="Length."/>
+    <DynamicProperty name="Height" description="Height."/>
+    <DynamicProperty name="Width" description="Width."/>
+    <DynamicProperty name="Color" description="Color [Red,Green,Blue] (0-255)."/>
+    <DynamicProperty name="Opacity" description="Amount to blend with the object's original color (0-255)."/>
+    <DynamicProperty name="GeneratedPart" description="Generated part"/>
+    <DynamicProperty name="ShowAtOrigin" description="Set to true to show shape at Origin."/>
+    <DynamicProperty name="MakeAxisFrame" description="Set to true to make frame at Axis Position."/>
+    <DynamicProperty name="IsSelectable" description="Enable part to be selected in the Graphics window."/>
+    <IOSignal name="UpdateGraph" description="Set to high (1) to update the generated part when new values applied."/>
+    <IOSignal name="SyncToRAPID" description="Set to high (1) to update the RAPID code with current values.(Auto-resetted at end of Sync)"/>
+  </SmartComponent>
+</LibraryResource>
